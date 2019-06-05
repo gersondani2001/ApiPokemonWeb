@@ -1,0 +1,10 @@
+Este documento es para informarle que en estas carpetas van todo la informacion que se requiere para trabajar 
+como:
+-css
+-js
+-templates
+-img
+-resource
+-lib
+
+y tambien la carpeta de los node- modules
