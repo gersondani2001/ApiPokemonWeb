@@ -1,0 +1,139 @@
+<!--html codigo de etiquetas para la creacion de una pagina web o websiteapp-->
+<!doctype html>
+<html lang="en">
+  <head>
+  	<!-- codigo de enlace de jquery -->
+  	<script src="lib/jquery.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!--link del css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--icono para el sitio web-->
+	<link rel="icon" href="img/icon.png">	
+
+	<!--link de los iconos icomoon-->
+
+	<link rel="stylesheet" href="resour/fonts/style.css">
+
+    <!--firebase carenal-->
+    <link rel="stylesheet" href="https://firebase.google.com/docs/web/setup#config-web-ap">
+
+    <title>Log In Pokemon Api.</title>
+  </head>
+  <body class="bg-custom text-light" onload="myFunction()">
+
+	<div class="text-center " id="pre">
+		<img src="img/preload.gif" alt="preload" width="250" height="250">		
+	</div>
+
+	<div id="loader"></div>
+
+  	<div id="myDiv" class="animate-bottom">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-transparent border border-light border-top-0 border-left-0 border-right-0">
+			<a class="navbar-brand" href="#"><img src="img/link.png" width="30" height="30" class="d-inline-block" alt="pokemon link">
+			Pokemon <span class="icon icon-home"></span> Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Pagina Oficial Pokemon.<span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>	
+
+
+
+			<!--
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+					<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</div>
+			-->
+		</nav>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6 ml-auto mr-auto">
+					<div class="card bg-custom-1 mb-5">
+						<h3 class="card-header">Log In Pokemon Home.</h3>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-8 ml-auto mr-auto">
+									<form>
+										<div class="form-group">
+											<label for="exampleInputEmail1">Email del usuario:</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email(Coreo Electronico)." required ng-model="usuario.name">
+											<small id="emailHelp" class="form-text text-light">Nunca compartiremos su correo electrónico con nadie más.</small>
+									        <div class="error">
+									          <i class="fas fa-exclamation-circle"></i>
+									          Error encountered!
+									        </div>
+										</div>
+										<div class="form-group">
+											<label for="exampleInputPassword1">Contraseña:</label>
+											<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña aqui." ng-model="usuario.pass">
+										</div>
+										<div class="form-group form-check">
+											<input type="checkbox" class="form-check-input" id="exampleCheck1">
+											<label class="form-check-label" for="exampleCheck1">Guardar el inicio de sesion.</label>
+										</div>
+										<button type="button" class="btn btn-primary" ng-click="func(usuario)">Entrar.</button>
+										<button type="button" class="btn btn-danger">Registrate...</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-dark sucess border border-light border-bottom-0 border-left-0 border-right-0">
+			Pokemon &copy; Programacion Curso 2019  <a class="navbar-brand" href="https://www.sakibian.com">Developed by Gerson</a>
+		</nav>  		
+
+  	</div>
+
+
+
+
+
+
+    <!--codigo del enlace de conexion con firebase-->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="lib/angular.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!--html codigo de etiquetas para la creacion de una pagina web o websiteapp-->
+<!doctype html>
+<html lang="en" class="html">
+  <head>
+  	<!-- codigo de enlace de jquery -->
+  	<script src="../lib/jquery.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <!--link del css-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--icono para el sitio web-->
+	  <link rel="icon" href="../img/icon.png">	
+    <!--link de los iconos icomoon-->
+
+    <link rel="stylesheet" href="../resour/fonts/style.css">
+
+
+    <title>Registro.</title>
+  </head>
+  <body class="body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent border border-light border-top-0 border-left-0 border-right-0">
+      <a class="navbar-brand" href="#"><img src="../img/link.png" width="30" height="30" class="d-inline-block" alt="pokemon link">
+      Pokemon <span class="icon icon-home"></span> Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active text-center">
+            <a class="nav-link" href="#">Pagina Oficial Pokemon.<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>  
+
+
+
+      <!--
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+      -->
+    </nav>
+
+
+    <form class="forml">
+      <h1>Registro.</h1>
+      <div class="form-group-lite">
+        <input type="text" placeholder=" " name="nom" id="name" required ng-model="reg.user">
+        <label for="name">Nombre:</label>
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i>
+          Error encountered!
+        </div>
+      </div>
+      <div class="form-group-lite">
+        <input type="email" placeholder=" "  name="email" id="email" required ng-model="reg.email">
+        <label for="email">Email:</label>
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+      </div>
+      <div class="form-group-lite">
+        <input type="password" placeholder=" " name="pass" id="password" required ng-model="reg.password">
+        <label for="password">Contraseña:</label>
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+      </div>
+      <div class="form-group-lite">
+        <input type="password" placeholder=" "  name="passC" id="confirm" required ng-model="reg.passwordConf">
+        <label for="confirm">Confirmar Contraseña:</label>
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+      </div>
+      <input type="button" value="VIVE." ng-click="func2(reg)">
+      <div class="form-bottom-bo">
+        Regresar al Log In.
+      </div>
+    </form>
+
+  	
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../lib/angular.js"></script>
+	<script src="../lib/bootstrap/js/bootstrap.js"></script>
+	<script src="../js/script.js"></script>
+  </body>
+</html>

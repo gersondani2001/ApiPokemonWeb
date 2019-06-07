@@ -1,0 +1,93 @@
+<!--html codigo de etiquetas para la creacion de una pagina web o websiteapp-->
+<!doctype html>
+<html lang="en" ng-app="pokeapilite">
+  <head>
+  	<!-- codigo de enlace de jquery -->
+  	<script src="../lib/jquery.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <!--link del css-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--icono para el sitio web-->
+	  <link rel="icon" href="../img/icon.png">	
+    <!--link de los iconos icomoon-->
+
+    <link rel="stylesheet" href="../resour/fonts/style.css">
+
+    <link rel="stylesheet" href="resour/fonts/style.css">
+
+   <!--fonts google-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+
+    <!--firebase carenal-->
+    <link rel="stylesheet" href="https://firebase.google.com/docs/web/setup#config-web-ap">
+
+    <title>Pokemon Api.</title>
+  </head>
+  <body ng-controller="appCtrl">
+
+
+
+    <div class="container-fluid fondoroja">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 text-center">
+          <h1 class="styh1">PokeApi App.</h1>
+        </div>
+      </div>
+    </div>
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-md-6 col-xs-6 text-center mid">
+           <img src="../img/preload.gif" alt="pikachu" class="pika">
+         </div>      
+         <div class="col-md-6 text-center conttt">
+
+          <form class="form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Mostrar a tu Pokemon Favorito.</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre de Pokemon" ng-model="nomP">
+              <small id="emailHelp" class="form-text text-muted">Esta pagina web es para el trabajo de creacion y utilizacion de API para aprendizaje en angular.js...</small>
+            </div>
+          </form>
+
+
+         </div>
+       </div>
+     </div>
+
+
+
+
+    <div class="container-fluid cont1">
+      <div class="row">
+        <div class="col-md-3 col-xs-3 text-center contenedor" ng-repeat="j in Pokeapi | filter: nomP ">
+          <div class="color ">
+            <img src="{{j.data.sprites.front_default}} " class="imagen" alt="pokes">
+            <div class="color2  ">
+              <h1 class="styh11">{{j.data.name}} <span class="icon-feed"></span> id.{{j.data.id}}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  	
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../lib/angular.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+	  <script src="../lib/bootstrap/js/bootstrap.js"></script>
+	  <script src="../js/script.js"></script>
+  </body>
+</html>
